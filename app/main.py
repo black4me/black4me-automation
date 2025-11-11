@@ -1,8 +1,8 @@
 from fastapi import FastAPI, Request, HTTPException, BackgroundTasks
 from pydantic import BaseModel
-from models import Lead
-from services import add_lead, welcome_and_upsell, handle_vip
-from utils import verify_signature
+from app.models import Lead
+from app.services import add_lead, welcome_and_upsell, handle_vip
+from app.utils import verify_signature
 import json, os
 
 app = FastAPI(title="Black4Me Automation")
